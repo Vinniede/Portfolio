@@ -1,5 +1,5 @@
 document.querySelector("form").addEventListener("submit", function(e) {
-    e.preventDefault(); // Prevent form from refreshing the page
+    e.preventDefault();
 
     // Get form values
     const name = document.getElementById("name").value;
@@ -15,6 +15,6 @@ document.querySelector("form").addEventListener("submit", function(e) {
 
     // --------- Send via WhatsApp ---------
     const whatsappMessage = `New Contact:%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
-    const whatsappLink = `https://wa.me/+254790406839?text=${whatsappMessage}`; // Replace with your WhatsApp number (no + or spaces)
+    const whatsappLink = `https://wa.me/+254790406839?text=${whatsappMessage}`; 
     window.open(whatsappLink, "_blank");
 });

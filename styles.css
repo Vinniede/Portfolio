@@ -28,6 +28,36 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+.level-bar{
+    height: 8px;
+    border-radius: 5px;
+    margin-top: 4px;
+    background-color: #ddd;
+    overflow: hidden;
+    position: relative;
+}
+.level-bar::after{
+    content: '';
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+}
+.expert::after{
+    width: 100%;
+    background-color: #4caf50;
+}
+.advanced::after{
+    width: 75%;
+    background-color: #4caf50;
+}
+.intermediate::after{
+    width: 50%;
+    background-color: #4caf50;
+}
+.beginner::after{
+    width: 25%;
+    background-color: #4caf50;
+}
 .profile-container {
     display: flex;
     justify-content: center;

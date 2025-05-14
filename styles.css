@@ -64,6 +64,9 @@ nav ul li a {
     align-items: center;
     margin-bottom: 20px;
 }
+.profile{
+    background-color: #740f4f;
+}
 
 .profile-circle {
     width: 150px;

@@ -1,217 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sir Vincent - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./images/vinnie.jpg">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sir Vincent</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="/images/3D Logo 'Vincent Muthuri'.png"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+      <div class="header-left">
+        <div class="logo-video">
+          <video
+            src="images/3D Logo 'Vincent Muthuri'.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+        </div>
+        <div class="logo-text">Portfolio</div>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav id="nav-menu" class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#credentials-and-blogs">Blogs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <!-- Mobile popup nav -->
+      <div class="nav-popup" id="nav-popup">
+        <nav class="mobile-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#">Blogs</a>
+          <a href="#contact">Contact</a>
         </nav>
+      </div>
     </header>
 
-    <section id="home">
-        <div class="profile-container">
-            <div class="profile-circle">
-                <img src="/images/vinnie.jpg" alt="Vincent Muthuri" class="profile-pic">
+    <section class="hero" id="home">
+      <div class="hero-main">
+        <div class="hero-text">
+          <h1>Hi👋, I'm Sir <span>Vincent Muthuri</span></h1>
+          <h3>
+            Your Go-To IT Specialist & Frontend Developer💻 driven by passion,
+            powered by curiosity. <br />
+            Always learning, always building, and yes, open to new
+            opportunities.
+          </h3>
+          <p>
+            I build beautiful, functional websites and applications that help
+            businesses grow and succeed online.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn primary">View My Work</a>
+            <a href="#" class="btn outline">Let’s talk</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-circle">
+            <img
+              src="images/My profile 2.jpg"
+              alt="Vincent Muthuri"
+              class="profile-pic"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wave">
+        <svg
+          class="wave"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,256L48,245.3C96,235,192,213,288,218.7C384,224,480,256,576,250.7C672,245,768,203,864,176C960,149,1056,139,1152,133.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container">
+        <div class="personal-card">
+          <div class="avatar-box">
+            <img
+              src="images/My profile 2.jpg"
+              alt="Vincent Muthuri"
+              class="profile-photo"
+            />
+          </div>
+          <div class="personal-info">
+            <h3>Personal Info</h3>
+            <p>
+              <strong>Name:</strong> <br />
+              Vincent Muthuri
+            </p>
+            <p>
+              <strong>Age:</strong> <br />
+              25 Years
+            </p>
+            <p>
+              <strong>Location:</strong> <br />
+              Nairobi, Kenya
+            </p>
+            <p>
+              <strong>Experience:</strong> <br />
+              3+ Years
+            </p>
+            <p>
+              <strong>Freelance:</strong>
+              <span class="available">Available</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h3>Who am I?</h3>
+          <p>
+            I'm a passionate IT Specialist based in Nairobi, with a deep love
+            for creating elegant solutions to complex problems. With expertise
+            in both frontend and backend development, I strive to build
+            applications that not only function flawlessly but also provide
+            exceptional user experiences.
+          </p>
+          <p>
+            Struggling with clunky systems, security risks, or slow development
+            cycles? I help businesses eliminate those pain points by delivering
+            tailored, secure, and scalable IT solutions.
+          </p>
+
+          <ul class="skill-list">
+            <li><strong>Frontend Development:</strong> React, Next.js</li>
+            <li><strong>Backend Development:</strong> Python, Node.js</li>
+            <li><strong>Database Management:</strong> SQL, MongoDB</li>
+            <li><strong>Cloud Solutions:</strong> AWS, Firebase</li>
+            <li>
+              <strong>Security:</strong> Best practices, threat mitigation
+            </li>
+            <li>
+              <strong>IT Optimization:</strong> Performance tuning,
+              infrastructure
+            </li>
+          </ul>
+
+          <h4>What sets me apart?</h4>
+          <ul class="value-list">
+            <li>
+              🔧 Problem-Solving Mindset – I don’t just write code; I solve real
+              business problems
+            </li>
+            <li>
+              🚀 Agile & Efficient – Fast turnaround without compromising
+              quality
+            </li>
+            <li>
+              🤝 Reliable Partner – Clear communication and commitment to
+              deadlines
+            </li>
+          </ul>
+
+          <p>
+            I’m not just a developer; I’m your partner in navigating the tech
+            landscape. Let’s build something great – together.
+          </p>
+
+          <div class="about-buttons">
+            <a href="#contact" class="hire-btn">Hire Me</a>
+            <a href="images/Vinnie CV.pdf" target="_blank" class="download-btn">
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-subtitle">
+        I've worked with a variety of technologies and tools throughout my
+        career.
+      </p>
+
+      <div class="skills-container">
+        <!-- Frontend -->
+        <div class="skills-box">
+          <div class="skills-header">
+            <span class="icon">🌐</span>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skill">
+            <span>HTML/CSS <span class="percent">95%</span></span>
+            <div class="progress-bar"><div style="width: 95%"></div></div>
+          </div>
+          <div class="skill">
+            <span>JavaScript <span class="percent">90%</span></span>
+            <div class="progress-bar"><div style="width: 90%"></div></div>
+          </div>
+          <div class="skill">
+            <span>React <span class="percent">85%</span></span>
+            <div class="progress-bar"><div style="width: 85%"></div></div>
+          </div>
+          <div class="skill">
+            <span>Vue.js <span class="percent">80%</span></span>
+            <div class="progress-bar"><div style="width: 80%"></div></div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skills-box">
+          <div class="skills-header">
+            <span class="icon">🛠️</span>
+            <h3>Backend Development</h3>
+          </div>
+          <div class="skill">
+            <span>Node.js <span class="percent">85%</span></span>
+            <div class="progress-bar purple">
+              <div style="width: 85%"></div>
             </div>
+          </div>
+          <div class="skill">
+            <span>Python <span class="percent">80%</span></span>
+            <div class="progress-bar purple">
+              <div style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>MongoDB <span class="percent">75%</span></span>
+            <div class="progress-bar purple">
+              <div style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>SQL <span class="percent">70%</span></span>
+            <div class="progress-bar purple">
+              <div style="width: 70%"></div>
+            </div>
+          </div>
         </div>
-        <h1 class="profile">👋 Hi, I'm Vincent Muthuri</h1>
-        <h3>Your Go-To IT Specialist & Frontend Developer💻 driven by passion, powered by curiosity. <br>
-            Always learning, always building, and yes, open to new opportunities.</h3>
-        <p>With expertise in React, NextJS, Python, and JavaScript, I bring unique solutions to complex problems.</p>
-        <a href="#contact">Get in Touch</a>
-        <a href="#projects">View Projects</a>
-    </section>
+      </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate IT Specialist based in Nairobi, with a deep love for creating elegant solutions to complex problems. With expertise in both frontend and backend development, I strive to build applications that not only function flawlessly but also provide exceptional user experiences.</p>
-        <p>Struggling with clunky systems, security risks, or slow development cycles? I help businesses eliminate those pain points by delivering tailored, secure, and scalable IT solutions. <br>
-            
-            With 2+ years of hands-on experience, I specialize in:
-            <ul>
-                <li>Frontend Development:- Crafting responsive, user-friendly interfaces using React and Next.js.</li>
-                <li>Backend Development:- Building robust APIs and server-side applications with Python and Node.js.</li>
-                <li>Database Management:- Designing and optimizing databases for performance and scalability.</li>
-                <li>Cloud Solutions:- Implementing AWS services to enhance application performance and security.</li>
-                <li>Security Best Practices: Ensuring your applications are secure from vulnerabilities.</li>
-                <li>Cybersecurity:- Protecting your digital assets from threats</li>
-                <li>IT Infrastructure Optimization:- Making your systems faster and more reliable</li>
-            </ul>
-            
-            What sets me apart?
-            <ul>
-                <li>🔧 Problem-Solving Mindset – I don’t just write code; I solve real business problems</li>
-                <li>🚀 Agile & Efficient – Fast turnaround without compromising quality</li>
-                <li>🤝 Reliable Partner – Clear communication and commitment to deadlines</li>
-            </ul>
-            I’m not just a developer; I’m your partner in navigating the tech landscape. My goal is to empower you with solutions that not only meet your needs but also exceed your expectations.
-            Whether you need a dependable developer, a security-first consultant, or someone to streamline your digital operations, I'm ready to help you turn tech challenges into business growth.
-            
-            Let’s build something great – together.
-        </p>
-    </section>
-
-    <section id="skills">
-        <h2>Technical Expertise</h2>
-        <div>
-            <h3>Frontend</h3>
-            <ul>
-                <li>HTML
-                    <div class="level-bar expert"></div>
-                </li>
-                <li>CSS
-                    <div class="level-bar expert"></div>
-                </li>
-                <li>React.js
-                    <div class="level-bar advanced"></div>
-                </li>
-                <li>JavaScript
-                    <div class="level-bar advanced"></div>
-                </li>
-            </ul>
+      <!-- Other Skills -->
+      <div class="other-skills-section">
+        <h3>Other Skills</h3>
+        <div class="badge-container">
+          <span class="badge light-blue">Version Control Systems(Git)</span>
+          <span class="badge light-green">UI/UX Design</span>
+          <span class="badge yellow">CLI/Terminal Skills</span>
+          <span class="badge light-red">Package Manangers</span>
+          <span class="badge light-purple">Responsive Design</span>
+          <span class="badge purple">Microsoft Office</span>
+          <span class="badge blue">Docker(learning)</span>
+          <span class="badge green">AWS(learning)</span>
         </div>
-        <div>
-            <h3>Backend</h3>
-            <ul>
-                <li>Python
-                    <div class="level-bar advanced"></div>
-                </li>
-                <li>Php
-                    <div class="level-bar advanced"></div>
-                </li>
-                <li>Node.js
-                    <div class="level-bar intermediate"></div>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h3>Database & Cloud</h3>
-            <ul>
-                <li>PostgreSQL
-                    <div class="level-bar intermediate"></div>
-                </li>
-                <li>MongoDB
-                    <div class="level-bar intermediate"></div>
-                </li>
-                <li>AWS
-                    <div class="level-bar intermediate"></div>
-                </li>
-            </ul>
-        </div>
+      </div>
     </section>
 
     <section id="experience">
-        <h2>Experience</h2>
-        <div>
-            <h3>Freelance Software Developer</h3>
-            <p>Vintech Solutions - December 2024 - February 2025</p>
-            <ul>
-                <li>Developed 3 custom business applications (POS, inventory management) using PHP/JavaScript.</li>
-                <li>Upgraded legacy systems for clients, improving processing speed by 40%.</li>
-                <li>Key Achievement: Designed a POS system that reduced inventory discrepancies by 25% for a retail client.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Junior Network Technician</h3>
-            <p>Altech solutions - July 2024 to October 2024</p>
-            <ul>
-                <li>Configured and maintained LAN/WAN networks for 12+ SME clients.</li>
-                <li>Provided IT support (hardware/software troubleshooting) for 50+ users, achieving 95% satisfaction rate</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Attachment</h3>
-            <p>Petanns Institute of Business Studies - January 2024 to March 2024</p>
-            <ul>
-                <li>Assisted with tutoring and system administration.</li>
-                <li>Collaborated with team members in teaching and marketing Petanns Institute.</li>
-                <li>Contributed to various activities that were involved in the IT department.</li>
-            </ul>
-        </div>
-    </section>
+      <h2 class="section-title">Tech Experience</h2>
 
-    <section id="certifications">
-        <h2>Education & Certifications</h2>
-        <div>
-            <h3>Diploma in ICT</h3>
-            <p>Laikipia University - Coursework completed: April 2025 | Graduation: December 2025</p>
-        </div>
-        <div>
-            <h3>AWS Solutions Architect</h3>
-            <p>Udemy - September 2024</p>
-        </div>
-        <div>
-            <h3>ALX Software Engineering</h3>
-            <p>ALX - November 2022</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div>
-            <h3>Vinnie.ai</h3>
-            <p>An AI-driven platform that provides intelligent solutions for various applications.</p>
-            <table>
-                <tr>
-                    <th>AI</th>
-                    <th>TypeScript</th>
-                    <th>Next.Js</th>
-                </tr>
-                <tr>
-                    <td>MongoDb</td>
-                    <td>nextAuth</td>
-                    <td></td>
-                </tr>
-            </table>
-            <h3>Travel@Kenya</h3>
-            <p>A dedicated platform to provide travelers with the experience and resources to explore Kenya.</p>
-            <a href="https://adventure-bookings.vercel.app/" target="_blank">Click to explore</a>
-        </div>
-    </section>
-
-    <section id="blogs">
-        <h2>Recent Blogs</h2>
+      <div class="experience-entry">
+        <h3>Freelance Software Developer</h3>
+        <p><strong>Vintech Solutions</strong> — Dec 2024 to Feb 2025</p>
         <ul>
-            <li>2025-01-14 - Mastering Async/Await in Node.js</li>
-            <li>2025-06-07 - Who is Sir Vincent?</li>
-            <li>2025-04-10 - Getting Started with Docker</li>
+          <li>
+            Developed 3 custom business applications (POS, inventory management)
+            using PHP & JavaScript.
+          </li>
+          <li>
+            Upgraded legacy systems for clients, improving processing speed by
+            40%.
+          </li>
+          <li>
+            <strong>Key Achievement:</strong> Designed a POS system that reduced
+            inventory discrepancies by 25%.
+          </li>
         </ul>
+      </div>
+
+      <div class="experience-entry">
+        <h3>Junior Network Technician</h3>
+        <p><strong>Altech Solutions</strong> — July 2024 to Oct 2024</p>
+        <ul>
+          <li>
+            Configured and maintained LAN/WAN networks for 12+ SME clients.
+          </li>
+          <li>
+            Provided IT support (hardware/software troubleshooting) for 50+
+            users, achieving 95% satisfaction rate.
+          </li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <h3>IT Attachment</h3>
+        <p>
+          <strong>Petanns Institute of Business Studies</strong> — Jan 2024 to
+          Mar 2024
+        </p>
+        <ul>
+          <li>Assisted with tutoring and system administration.</li>
+          <li>Collaborated with team members in teaching and marketing.</li>
+          <li>Contributed to various IT department activities.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Let's Connect</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="projects-subtitle">
+        Here are some of my recent projects. Each one represents a unique
+        challenge and solution.
+      </p>
+      <div class="projects-grid">
+        <div class="project-card vintech">
+          <div class="icon">💻</div>
+          <h3>Vintech Solutions</h3>
+          <p>
+            A professional company website for Vintech Solutions — an IT service
+            provider and tech product vendor. The site is fully responsive,
+            SEO-optimized, and showcases core services, product categories, and
+            contact channels.
+          </p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span
+            ><span>Laravel</span>
+          </div>
+          <a href="#">View Project →</a>
+        </div>
+
+        <div class="project-card travelkenya">
+          <div class="icon">🌍</div>
+          <h3>Travel@Kenya</h3>
+          <p>
+            A dynamic travel and adventure booking platform designed for
+            exploring Kenya’s top destinations. It allows users to discover,
+            plan, and book customized trips — with upcoming plans to expand
+            across Africa.
+          </p>
+          <div class="tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span
+            ><span>Tailwind</span>
+          </div>
+          <a href="#">View Project →</a>
+        </div>
+
+        <div class="project-card vinnieai">
+          <div class="icon">🤖</div>
+          <h3>Vinnie AI</h3>
+          <p>
+            A weather-focused AI assistant powered by OpenWeatherMap and
+            integrated via Vercel edge functions. Users can ask about real-time
+            forecasts in natural language, getting instant weather insights.
+          </p>
+          <div class="tags">
+            <span>Next.js</span><span>TypeScript</span><span>Vercel AI SDK</span
+            ><span>OpenWeatherMap API</span>
+          </div>
+          <a href="#">View Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials-and-blogs">
+  <h2 class="section-title">Education, Certifications & Blogs</h2>
+
+  <div class="credentials-blogs-container">
+    <!-- Education & Certifications -->
+    <div class="education-container">
+      <h3>Education & Certifications</h3>
+      <div>
+        <h4>Diploma in ICT</h4>
+        <p>Laikipia University - Coursework completed: April 2025 | Graduation: December 2025</p>
+      </div>
+      <div>
+        <h4>AWS Solutions Architect</h4>
+        <p>Udemy - September 2024</p>
+      </div>
+      <div>
+        <h4>ALX Software Engineering</h4>
+        <p>ALX - November 2022</p>
+      </div>
+    </div>
+
+    <!-- Blogs -->
+    <div class="blogs-container">
+      <h3>Latest Blog Posts</h3>
+      <ul class="blog-list">
+        <li>
+          <h4>Mastering Async/Await in Node.js</h4>
+          <p>2025-01-14</p>
+          <button onclick="openBlogModal('async')">Read More</button>
+        </li>
+        <li>
+          <h4>Who is Sir Vincent?</h4>
+          <p>2025-06-07</p>
+          <button onclick="openBlogModal('vincent')">Read More</button>
+        </li>
+        <li>
+          <h4>Getting Started with Docker</h4>
+          <p>2025-04-10</p>
+          <button onclick="openBlogModal('docker')">Read More</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Blog Modal -->
+  <div id="blogModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeBlogModal()">&times;</span>
+      <h2 id="blogModalTitle"></h2>
+      <p id="blogModalDate" style="font-size: 0.9rem; color: #777;"></p>
+    <div id="blogModalContent" style="margin-top: 15px;"></div>
+  </div>
+ </div>
+</section>
+
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">
+        Have a project in mind or want to work together? Feel free to contact
+        me.
+      </p>
+
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <form id="contactForm" onsubmit="handleFormSubmit(event)" class="contact-form">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g Vincent M" />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Vincent@example.com" />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Hello, I'd like to talk about..."></textarea>
+
+          <button type="submit">Send Message</button>
         </form>
+
+        <div id="contactOptionModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('contactOptionModal')">&times;</span>
+            <h2><i class="fas fa-comments"></i>Reach Out</h2>
+            <p id="contactText">Choose how you want to send your message:</p>
+            <div class="contact-buttons">
+              <a id="whatsappLink" href="#" target="_blank" class="contact-btn whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </a>
+              <a id="emailLink" href="#" target="_blank" class="contact-btn email">
+                <i class="fas fa-envelope"></i> Email
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt icon purple"></i>
+            <div>
+              <strong>Location</strong><br />
+              Nairobi, Kenya
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-envelope icon purple"></i>
+            <div>
+              <strong>Email</strong><br />
+              vinniezuri@gmail.com
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-phone icon purple"></i>
+            <div>
+              <strong>Phone</strong><br />
+              +(254) 790-406-839
+            </div>
+          </div>
+
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+          </div>
+            <a href="https://web.facebook.com/zuri.vinnie" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Vintech_ke" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/vinniezurijulister/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="www.linkedin.com/in/vincent-muthuri-ke" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Vinniede" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <p>© 2024 Sir Vincent. All rights reserved.</p>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Portfolio</h3>
+          <p>Creating beautiful digital experiences.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📧 vinniezuri@gmail.com</p>
+          <p>📞 +(254) 790-406-839</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Vincent @Vintech. All rights reserved.</p>
+        <div class="footer-icons">
+          <a href="https://web.facebook.com/zuri.vinnie" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/Vintech_ke" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/vinniezurijulister/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="www.linkedin.com/in/vincent-muthuri-ke" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Vinniede" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

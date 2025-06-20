@@ -447,7 +447,7 @@ header {
 .skills-section {
   padding: 10px 40px;
   text-align: center;
-  background-color: #f9f9ff;
+  background-color: #f0f0f5;
 }
 
 .section-subtitle {
@@ -1023,11 +1023,14 @@ header {
   justify-content: center;
   border-radius: 50%;
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  transform: scale(1);
 }
 
 .social-icons a:hover {
-  background-color: #399b98;
+  background-color: #9b3967;
+  color: #ffffff;
+  transform: scale(1.2) rotate(6deg);
 }
 
 /* Footer Section */

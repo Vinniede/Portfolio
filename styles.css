@@ -1178,14 +1178,42 @@ footer {
     height: 240px;
   }
 
+  .about {
+    padding: 20px 5%;
+    overflow-x: hidden;
+  }
+
   .about-container {
     flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about-text {
+    min-width: unset;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
     padding: 0 10px;
   }
 
-  .about-text h3 {
-    font-size: 1.5rem;
-    text-align: center;
+  .about-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .about-buttons a {
+    margin-right: 0;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .personal-card {
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
   }
 
   .skills-container {

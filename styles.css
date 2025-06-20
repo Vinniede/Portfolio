@@ -696,7 +696,7 @@ header {
   text-decoration: none;
   box-shadow: 0 5px 15px rgba(108, 71, 255, 0.4);
   transform-style: preserve-3d;
-  animation: float3d 2.5s ease-in-out infinite; /* 👈 always animating */
+  animation: float3d 2.5s ease-in-out infinite;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -1136,5 +1136,132 @@ footer {
     gap: 10px;
     text-align: center;
     padding-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+    margin-left: 15px;
+  }
+
+  .hero-main {
+    flex-direction: column;
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .profile-circle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .skills-container {
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .skills-box {
+    width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .credentials-blogs-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .education-container,
+  .blogs-container {
+    width: 100%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-title::after {
+    width: 80px;
+  }
+
+  .btn,
+  .about-buttons a {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+  }
+
+  .modal-content {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .menu-toggle {
+    font-size: 2rem;
+  }
+
+  .nav-popup {
+    right: 20px;
+    top: 60px;
+    width: 85%;
   }
 }

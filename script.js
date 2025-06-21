@@ -72,6 +72,11 @@ const toggle = document.getElementById('menu-toggle');
       `
     }
   };
+  document.querySelectorAll(".mobile-nav a").forEach((link) => {
+  link.addEventListener("click", () => {
+    document.getElementById("nav-popup").classList.remove("show");
+  });
+});
 
   function openBlogModal(id) {
     const data = blogData[id];
@@ -96,7 +101,7 @@ const toggle = document.getElementById('menu-toggle');
   };
 
   function handleFormSubmit(e) {
-  e.preventDefault(); // stop normal submission
+  e.preventDefault();
 
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -113,31 +118,15 @@ const toggle = document.getElementById('menu-toggle');
 
   // WhatsApp link
   const whatsappNumber = "254790406839"; // your WhatsApp number
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${fullMessage}`;
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(fullMessage)}`;
 
-  // Email link
-  const mailSubject = encodeURIComponent(subject);
-  const mailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-  const emailLink = `mailto:vinniezuri@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+  // Email via Gmail link (forced Gmail)
+  const gmailSubject = encodeURIComponent(subject);
+  const gmailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=vinniezuri@gmail.com&su=${gmailSubject}&body=${gmailBody}`;
 
   document.getElementById("whatsappLink").href = whatsappLink;
-  document.getElementById("emailLink").href = emailLink;
+  document.getElementById("emailLink").href = gmailLink;
 
   openModal("contactOptionModal");
 }
-
-function openModal(id) {
-  document.getElementById(id).style.display = "block";
-}
-
-function closeModal(id) {
-  document.getElementById(id).style.display = "none";
-}
-
-// Optional: Close modal when clicking outside
-window.onclick = function (e) {
-  const modal = document.getElementById("contactOptionModal");
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
-};

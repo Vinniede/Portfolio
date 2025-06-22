@@ -86,10 +86,10 @@ header {
   position: absolute;
   top: 70px;
   right: 40px;
-  background: white;
+  background: rgb(44, 44, 56);
   padding: 12px 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(96, 9, 9, 0.15);
   z-index: 999;
 }
 
@@ -97,12 +97,12 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 25px;
 }
 
 .mobile-nav a {
-  color: #333;
-  font-weight: 500;
+  color: #f9f9f9;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -1186,7 +1186,7 @@ footer {
     width: 100vw;
     line-height: 0;
     overflow-x: hidden;
-    margin-top: -60px; /* Pulls the wave up to sit above image */
+    margin-top: -60px;
     position: relative;
     z-index: 2;
     left: 50%;
@@ -1266,11 +1266,22 @@ footer {
   .contact-container {
     flex-direction: column;
     padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .contact-form,
   .contact-info {
     width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-info {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-break: break-all;
   }
 
   .footer-container {
@@ -1304,7 +1315,7 @@ footer {
 
   .modal-content {
     padding: 20px;
-    max-width: 90%;
+    max-width: 75%;
   }
 
   .menu-toggle {

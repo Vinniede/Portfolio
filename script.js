@@ -100,33 +100,51 @@ const toggle = document.getElementById('menu-toggle');
     }
   };
 
-  function handleFormSubmit(e) {
-  e.preventDefault();
+    function handleFormSubmit(e) {
+    e.preventDefault();
 
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const subject = document.getElementById("subject").value.trim();
-  const message = document.getElementById("message").value.trim();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-  if (!name || !email || !subject || !message) {
-    alert("Please fill in all fields before sending.");
-    return;
+    if (!name || !email || !subject || !message) {
+      alert("Please fill in all fields before sending.");
+      return;
+    }
+
+    // Construct message
+    const fullMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+
+    // WhatsApp message link
+    const whatsappNumber = "254790406839";
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(fullMessage)}`;
+    document.getElementById("whatsappLink").href = whatsappLink;
+
+    // Gmail message link
+    const gmailSubject = encodeURIComponent(subject);
+    const gmailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=vinniezuri@gmail.com&su=${gmailSubject}&body=${gmailBody}`;
+    document.getElementById("emailLink").href = gmailLink;
+
+    // Show the modal
+    openModal("contactOptionModal");
   }
 
-  // Format message
-  const fullMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    if (modal) modal.style.display = "block";
+  }
 
-  // WhatsApp link
-  const whatsappNumber = "254790406839"; // your WhatsApp number
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(fullMessage)}`;
+  function closeModal(id) {
+    const modal = document.getElementById(id);
+    if (modal) modal.style.display = "none";
+  }
 
-  // Email via Gmail link (forced Gmail)
-  const gmailSubject = encodeURIComponent(subject);
-  const gmailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=vinniezuri@gmail.com&su=${gmailSubject}&body=${gmailBody}`;
-
-  document.getElementById("whatsappLink").href = whatsappLink;
-  document.getElementById("emailLink").href = gmailLink;
-
-  openModal("contactOptionModal");
-}
+  // Optional: close modal when clicking outside
+  window.addEventListener("click", function (event) {
+    const modal = document.getElementById("contactOptionModal");
+    if (event.target === modal) {
+      closeModal("contactOptionModal");
+    }
+  });
